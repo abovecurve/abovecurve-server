@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-// api.abovecurve.com/health/diseases/covid
+// api.abovecurve.com/health/diseases/covid-19
 router.get('/', function(req, res, next) {
-  res.json({ message: 'Hello from the API!' });
+  res.json({ message: 'COVID-19 Data' });
 });
 
 module.exports = router;

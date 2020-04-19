@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/health", require("./health"));
-router.get("/", require("./ping"));
+router.use("/health", require("./health"));
+router.use("/ping", require("./ping"));
 
 module.exports = router;
