@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/health", require("./health"));
-router.get("/", require("./ping"));
+// api.abovecurve.com/health/
+router.get("/covid-19", require("./covid-19"));
 
 module.exports = router;
