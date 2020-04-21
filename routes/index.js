@@ -11,6 +11,8 @@ router.get("/", function (req, res, next) {
       "Welcome to the Above Curve API. Here you will find data-sets on various fields of research.",
     dataSets: ["health"],
     links: [{ health: `/health` }],
+    help:
+      "This is the API, if you are looking for the visual tools please see https://abovecurve.com",
   });
 });
 
