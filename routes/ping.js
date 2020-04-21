@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-// Delete this route eventually.
+// Test route to make sure api is working.
 router.get("/", function (req, res, next) {
   res.json({ message: "Hello from the Above Curve API!" });
 });
