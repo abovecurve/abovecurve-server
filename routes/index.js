@@ -12,7 +12,7 @@ router.get("/", function (req, res, next) {
     dataSets: ["health"],
     links: [{ health: `/health` }],
     help:
-      "This is the API, if you are looking for the visual tools please see https://abovecurve.com",
+      "This is the API, if you are looking for the visual data tools please see https://abovecurve.com",
   });
 });
 
