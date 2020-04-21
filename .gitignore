@@ -103,9 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# Elastic beanstalk
-.gitignore
-.elasticbeanstalk/
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
