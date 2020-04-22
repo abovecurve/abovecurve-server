@@ -6,7 +6,7 @@ describe("API health endpoints 'api.abovecurve.com/health'", () => {
     const res = await request(app).get("/health/");
     expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty("message");
-    expect(res.body.message).toContain("Health field.");
+    expect(res.body.message).toContain("Health field");
   });
 
 });
