@@ -4,6 +4,7 @@ const router = express.Router();
 // api.abovecurve.com/
 router.use("/health", require("./health"));
 router.use("/ping", require("./ping"));
+router.use("/users", require("./users"));
 
 router.get("/", function (req, res, next) {
   res.json({
