@@ -3,6 +3,7 @@ const router = express.Router();
 
 // api.abovecurve.com/
 router.use("/health", require("./health"));
+router.use("/census", require("./census"));
 router.use("/ping", require("./ping"));
 router.use("/users", require("./users"));
 
