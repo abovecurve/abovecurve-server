@@ -7,16 +7,16 @@ const pool = new Pool({
   port: process.env.RDS_PORT,
   database: "census_population"
 });
-const malePopulationByStateAge = async (request, response) => {
-  pool.query(`SELECT * FROM census_2018_population_male_by_state_age`, (error, results) => {
+
+const getMalePop = (request, response) => {
+  pool.query('SELECT * FROM census_2018_population_male_by_state_age ORDER BY state_code_fips ASC', (error, results) => {
     if (error) {
-      throw error;
+      throw error
     }
-    console.log(results.rows);
-    return results.rows;
+    response.status(200).json(results.rows)
   });
 };
 
 module.exports = {
-  malePopulationByStateAge
+  getMalePop
 };
