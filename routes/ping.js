@@ -5,6 +5,7 @@ var router = express.Router();
 router.get("/", function (req, res, next) {
   res.json({
     message: "Hello from the Above Curve API!",
+    updated: "6/20/20 08:48am",
     host: process.env.RDS_HOSTNAME,
     user: process.env.RDS_USERNAME,
     port: process.env.RDS_PORT,
