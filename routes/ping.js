@@ -1,15 +1,16 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
+const { RDS_HOSTNAME, RDS_USERNAME, RDS_PORT, RDS_DB_NAME } = process.env;
 
 // Test route for API.
-router.get("/", function (req, res, next) {
+router.get("/", function(req, res, next) {
   res.json({
     message: "Hello from the Above Curve API!",
     updated: "6/20/20 08:48am",
-    host: process.env.RDS_HOSTNAME,
-    user: process.env.RDS_USERNAME,
-    port: process.env.RDS_PORT,
-    database: process.env.RDS_DB_NAME
+    host: `${RDS_HOSTNAME}`,
+    user: `${RDS_USERNAME}`,
+    port: `${RDS_PORT}`,
+    database: `${RDS_DB_NAME}`
   });
 });
 
