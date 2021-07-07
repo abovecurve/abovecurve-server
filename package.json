@@ -16,7 +16,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "pg": "^8.0.2"
+    "pg": "^8.2.1"
   },
   "devDependencies": {
     "jest": "^25.4.0",
